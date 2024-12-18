@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space)) {
             displacement = Vector3.up * upAcceleration;
         } else if (Input.GetKeyDown(KeyCode.M)) {
-            gameManager.Mute();
+            gameManager.ToggleMute();
         } else if (Input.GetKeyDown(KeyCode.LeftShift)) {
             gameManager.Pause();
         }
