@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     private bool isMute = false;
     private Player player;
     [SerializeField] TextMeshProUGUI scoreText;
-    [SerializeField] TextMeshProUGUI FPSText;
     [SerializeField] GameObject titleText;
     [SerializeField] GameObject pauseText;
     [SerializeField] GameObject gameoverImage;
