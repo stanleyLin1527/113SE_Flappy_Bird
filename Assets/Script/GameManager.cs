@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     private bool isMute = false;
     private Player player;
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] TextMeshProUGUI FPSText;
     [SerializeField] GameObject titleText;
     [SerializeField] GameObject pauseText;
     [SerializeField] GameObject gameoverImage;
@@ -21,7 +22,7 @@ public class GameManager : MonoBehaviour
     private AudioSource bgm;
 
     private void Awake() {
-        Application.targetFrameRate = 120;
+        Application.targetFrameRate = 999;
 
         player = FindObjectOfType<Player>();
         bgm = GetComponent<AudioSource>();
