@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
 
     private void Update() {
         // Handle the input
-        if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButton(0)) {
+        if(Input.GetKeyDown(KeyCode.Space)) {
             displacement = Vector3.up * upAcceleration;
         } else if (Input.GetKeyDown(KeyCode.M)) {
             gameManager.Mute();
